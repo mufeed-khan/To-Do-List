@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h3>
+          To-Do List
+          <span id="icon" class="material-symbols-outlined">edit_document</span>
+        </h3>
+
+        <div class="row">
+          <input
+            type="text"
+            name=""
+            id="input-box"
+            placeholder="Add your text"
+          />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <div class="error">
+          <span class="material-symbols-outlined"> warning </span>
+
+          <p>Please write something!</p>
+        </div>
+
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+
+    <script src="scrypt.js"></script>
+  </body>
+</html>
